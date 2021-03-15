@@ -1,0 +1,83 @@
+<!--  cabeçalho -- inicio -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="ISO-8859-1">
+<title>Loucademia</title>
+</head>
+<body>
+	<header>
+		<img src="images/Loucademia_Logotipo.png">
+		<nav>
+			<div>
+				<a href="novoAluno.html">Novo aluno</a><br>
+				<a href="pesquisaDeAluno.html">Pesquisa de aluno</a><br>
+				<a href="controleDeAcesso.html">Controle de acesso</a><br>
+				<a href="relatorioEntradaSaida.html">Relatorio de Entradas e Saidas</a><br>
+				<a href="relatorioDeSituacoes.html">Relatorio de Situaçoes</a><br>
+			</div>
+		</nav>
+	</header>	
+			<h1>Relatorio de Entrada e Saidas</h1>
+	
+	<div id="infoMessage">
+		(Aqui vai eventual mensagem de sistemas confirmando sucesso ou erro)
+	</div>
+	
+	<br>
+	
+	<form>
+		<fieldset>
+			<legend>Parâmetros de Entrada e Saidas</legend>			
+			<label for="id">ID</label><br>
+			<input type="text" name="id" id="id"><br>			
+			<label for="dataInicial">Data Inicial</label><br>
+			<input type="date" name="dataInicial" id="dataInicial"><br>
+			<label for="dataFinal">Data Final</label><br>
+			<input type="date" name="dataFinal" id="dataFinal">								
+		</fieldset>
+		
+		<br>
+		
+		<input type="submit" value="Gerar relatório">
+	</form>
+
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>Entrada</th>
+			<th>Saída</th>
+			<th>Duração</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>André</td>
+			<td>05/03/2021 09:15:17</td>
+			<td>05/03/2021 10:05:14</td>
+			<td>00:50:10</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Carlos</td>
+			<td>05/03/2021 15:15:17</td>
+			<td>05/03/2021 16:05:14</td>
+			<td>00:50:10</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Simone</td>
+			<td>06/03/2021 19:15:17</td>
+			<td>06/03/2021 20:05:14</td>
+			<td>00:40:10</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>willian</td>
+			<td>07/03/2021 9:15:17</td>
+			<td>07/03/2021 10:05:14</td>
+			<td>00:60:10</td>
+		</tr>
+	</table>	
+	</body>
+</html>
