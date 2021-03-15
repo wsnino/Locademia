@@ -1,0 +1,99 @@
+<!--  cabeçalho -- inicio -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="ISO-8859-1">
+<title>Loucademia</title>
+</head>
+<body>
+	<header>
+		<img src="images/Loucademia_Logotipo.png">
+		<nav>
+			<div>
+				<a href="novoAluno.html">Novo aluno</a><br>
+				<a href="pesquisaDeAluno.html">Pesquisa de aluno</a><br>
+				<a href="controleDeAcesso.html">Controle de acesso</a><br>
+				<a href="relatorioDeEntradaSaida.html">Relatorio de Entradas e Saidas</a><br>
+				<a href="relatorioDeSituacoes.html">Relatorio de Situaçoes</a><br>
+			</div>
+		</nav>
+	</header>
+	
+	<h1>Relatorio de Situações</h1>
+	
+	<div id="infoMessage">
+		(Aqui vai eventual mensagem de sistemas confirmando sucesso ou erro)
+	</div>
+	
+	<br>
+	
+	<form>
+		<fieldset>
+			<legend>Parâmetros da Pesquisa</legend>			
+			<label for="situacao">Situação</label><br>
+			<input type="text" name="situacao" id="situacao"><br>			
+			<select name="situacao" id="situacao">
+				<option>Ativo</option>
+				<option>Inativo</option>
+				<option>com pendência</option>
+			</select>
+		</fieldset>
+		
+		<br>
+		
+		<input type="submit" value="Gerar relatório">
+	</form>
+	
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>Situaçâo</th>
+			<th>Celular</th>
+			<th>Fixo</th>
+			<th>ações</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>André</td>
+			<td>Ativo</td>
+			<td>41 1234-5678</td>
+			<td>41 1234-5678</td>
+			<td>
+				<input type="button" value="Editar">
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>simone</td>
+			<td>Ativo</td>
+			<td>21 3334-5678</td>
+			<td>21 4434-5678</td>
+			<td>
+				<input type="button" value="Editar">
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>willian</td>
+			<td>Ativo</td>
+			<td>21 5554-5678</td>
+			<td>21 4444-5678</td>
+			<td>
+				<input type="button" value="Editar">
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Carlos</td>
+			<td>Ativo</td>
+			<td>31 7774-5678</td>
+			<td>31 7774-5678</td>
+			<td>
+				<input type="button" value="Editar">
+			</td>
+		</tr>
+	</table>
+
+	</body>
+</html>
