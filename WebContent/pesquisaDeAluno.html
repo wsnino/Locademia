@@ -1,0 +1,105 @@
+<!--  cabeçalho -- inicio -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="ISO-8859-1">
+<title>Loucademia</title>
+</head>
+<body>
+	<header>
+		<img src="images/Loucademia_Logotipo.png">
+		<nav>
+			<div>
+				<a href="novoAluno.html">Novo aluno</a><br>
+				<a href="pesquisaDeAluno.html">Pesquisa de aluno</a><br>
+				<a href="controleDeAcesso.html">Controle de acesso</a><br>
+				<a href="relatorioEntradaSaida.html">Relatorio de Entradas e Saidas</a><br>
+				<a href="relatorioDeSituacoes.html">Relatorio de Situaçoes</a><br>
+			</div>
+		</nav>
+	</header>
+	<!-- cabeçalho Fim -->
+	<h1>Pesquisa de aluno</h1>
+	
+	<div id="infoMessage">
+		(Aqui vai eventual mensagem de sistemas confirmando sucesso ou erro)
+	</div>
+	
+	<br>
+	
+	<form>
+		<fieldset>
+			<legend>Parâmetros da Pesquisa</legend>			
+			<label for="id">ID</label><br>
+			<input type="text" name="id" id="id"><br>			
+			<label for="nome">Nome</label><br>
+			<input type="text" name="nome" id="nome"><br>			
+			<label for="rg">RG</label><br>
+			<input type="text" name="rg" id="rg"><br>			
+			<label for="telefoneDDD">Telefone</label><br>
+			<input type="tel" name="telefoneDDD" id="telefoneDDD">
+			<input type="tel" name="telefoneNumero" id="telefoneNumero">
+		</fieldset>
+		
+		<br>
+		
+		<input type="submit" value="Pesquisar">
+	</form>	
+			
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>RG</th>
+			<th>E-mail</th>
+			<th>Situaçao</th>
+			<th>Ações</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>André</td>
+			<td>111.111.111</td>
+			<td>andre@ig.com</td>
+			<td>Ativo</td>
+			<td>
+				<input type="button" value="Editar">
+				<input type="button" value="Excluir">
+			</td>			
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Carlos</td>
+			<td>222.222.222</td>
+			<td>carlos@ig.com</td>
+			<td>Inativo</td>
+			<td>
+				<input type="button" value="Editar">
+				<input type="button" value="Excluir">
+			</td>			
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>simone</td>
+			<td>333.333.333</td>
+			<td>simone@ig.com</td>
+			<td>Ativo</td>
+			<td>
+				<input type="button" value="Editar">
+				<input type="button" value="Excluir">
+			</td>			
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>willian</td>
+			<td>444.444.444</td>
+			<td>wilian@ig.com</td>
+			<td>Inativo</td>
+			<td>
+				<input type="button" value="Editar">
+				<input type="button" value="Excluir">
+			</td>			
+		</tr>
+	</table>
+	</body>
+</html>
+<!-- Rodapé Fim -->
