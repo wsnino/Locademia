@@ -1,8 +1,8 @@
 package br.com.softblue.loucademia.domain.aluno;
 
 import java.io.Serializable;
-
 import java.time.LocalDate;
+import java.time.Year;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import br.com.softblue.loucademia.application.util.StringUtils;
 
 @Entity
 @Table(name = "ALUNO")
@@ -53,9 +55,17 @@ public class Aluno implements Serializable {
 	@Embedded
 	private Telefone telefone = new Telefone();
 	
-	public void gerarMatricula() {
-		//TODO: Colocar lógica aqui
-		this.matricula = "00000001";
+	public void gerarMatricula(String maxMatricula) {
+		Year year = Year.now();
+		
+		if (maxMatricula == null) {
+			maxMatricula = year + StringUtils.leftZero(0, 4);
+		}
+		
+		int sequential = Integer.parseInt(maxMatricula.substring(4));
+		sequential++;
+		
+		this.matricula = year + StringUtils.leftZero(sequential, 4);
 	}
 
 	public String getMatricula() {
