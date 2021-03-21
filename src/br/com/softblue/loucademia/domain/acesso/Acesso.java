@@ -15,7 +15,7 @@ import javax.persistence.Table;
 import br.com.softblue.loucademia.domain.aluno.Aluno;
 
 @Entity
-@Table(name = "entradas_saidas")
+@Table(name = "ENTRADAS_SAIDAS")
 public class Acesso implements Serializable{
 
 	@Id

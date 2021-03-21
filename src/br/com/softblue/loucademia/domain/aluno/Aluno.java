@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "aluno")
+@Table(name = "ALUNO")
 public class Aluno implements Serializable {
 
 	public enum Sexo {
