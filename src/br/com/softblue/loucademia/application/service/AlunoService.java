@@ -31,8 +31,11 @@ public class AlunoService {
 	}
 	 private void update(Aluno aluno) {
 		 Validation.assertNotEmpty(aluno);
-		 Validation.assertNotEmpty(aluno.getMatricula());
-		 
+		 Validation.assertNotEmpty(aluno.getMatricula());		 
 		 alunoRepository.update(aluno);
 	 } 
+	 
+	 public Aluno findByMatricula(String matricula) {
+		 return alunoRepository.findByMatricula(matricula);
+	 }
 }
